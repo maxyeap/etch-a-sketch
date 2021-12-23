@@ -64,6 +64,9 @@ const reset = function (userInput) {
   if (userInput > 100) {
     alert("Please input number smaller than 100");
     return;
+  } else if (isNaN(userInput)) {
+    alert("Please input only number");
+    return;
   }
   const remove = document.getElementById("container");
   while (remove.firstChild) {
